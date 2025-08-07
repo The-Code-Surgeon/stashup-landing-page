@@ -1,0 +1,622 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+:root{
+  /* Color For Btns */
+  --primary: #3B82F6;
+  /* Color for Texts */
+  --textColor: #010813;
+  /* Medium Font Weight */
+  --font-weight: 500;
+  /* paragraph Font SIze */
+  --font-size: 1.5rem;
+
+}
+
+body{
+  color: var(--textColor);
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+list-style: none;
+}
+
+
+
+/* Navigation Styles */
+.site-nav {
+  /* Styles for the main navigation bar containing logo and navigation links */
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 7.5rem;
+  z-index: 2;
+}
+
+.logo {
+  /* Styles for the Stashup logo image in the navigation */
+  width: 15rem;
+}
+
+.primary-nav {
+  /* Styles for the primary navigation list (About Us, Features, Reviews) */
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+}
+
+
+.nav-link {
+  /* Styles for individual navigation links */
+  color: var(--textColor);
+  transition: 0.2s;
+}
+
+.nav-link:hover{
+  color: blue;
+}
+
+.login-link:hover{
+  color: #FFFFFF;
+  background-color: #1e40af;
+}
+
+.secondary-nav {
+  /* Styles for the secondary navigation list (Download App, Log In) */
+  display: flex;
+  align-items: center;
+}
+
+.login-link {
+  /* Styles for the Log In navigation link */
+  background-color: var(--textColor);
+  color: #FFFFFF;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5rem;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+}
+
+.body-container{
+  width: 90%;
+  margin-inline: auto;
+}
+
+/* Header Styles */
+.site-header {
+  /* Styles for the header section containing hero content */
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  /* Styles for the container holding hero title, description, and demo link */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  gap: 2rem;
+  align-items: start;
+}
+
+.hero-title {
+  /* Styles for the main heading in the hero section */
+  font-size: 4.8rem;
+
+}
+
+.hero-description {
+  /* Styles for the paragraph text in the hero section */
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: 2.5rem;
+}
+
+.demo-link {
+  /* Styles for the Download App link in the hero section */
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  background-color: var(--primary);
+  color: #FFFFFF;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5rem;
+  margin-top: 2rem;
+  transition: 0.2s;
+}
+
+.demo-link:hover{
+  color: #FFFFFF;
+  background-color: #1e40af;
+  border-radius: 2rem;
+}
+
+.hero-image-container {
+  /* Styles for the container holding the hero image */
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+}
+
+.hero-image {
+  /* Styles for the hero image itself */
+  max-width: 100%;
+  
+}
+
+/* Main Content Styles */
+
+.about-us-container{
+  /* Styles for the about us container */
+  height: auto;
+}
+
+/* Community Section Styles */
+.community-section {
+  /* Styles for the community section encouraging teens to join */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+.community-text {
+  /* Styles for the paragraph text in the community section */
+  font-size: 3rem;
+  font-weight: var(--font-weight);
+}
+
+.download-button-wrapper{
+  /* Styles for the download button wrapper for Playstore and Appstore */
+  display: flex;
+  gap: 5rem;
+}
+
+.download-button {
+  /* Styles for the download buttons (Google Play and App Store) */
+  font-size: 1.3rem;
+  color: #010813;
+}
+
+.download-button strong{
+  font-size: 2.2rem;
+}
+
+.google-play {
+  /* Styles for the Google Play download button */
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #010813;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  gap: 1rem;
+}
+
+.app-store {
+  /* Styles for the App Store download button */
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #010813;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  gap: 1rem;
+}
+
+.store-icon {
+  /* Styles for the store icons in the download buttons */
+  width: 4rem;
+}
+
+
+.benefits-container {
+  /* Styles for the container holding benefits image and text */
+  display: flex;
+  gap: 3rem;
+}
+
+.benefits-image-container {
+  /* Styles for the container holding the benefits image */
+  width: 50%;
+}
+
+.benefits-image {
+  /* Styles for the financial skills illustration image */
+  max-width: 100%;
+}
+
+.benefits-text {
+  /* Styles for the container holding benefits text and list */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+  gap: 2rem;
+  padding-left: 3rem;
+}
+
+.section-title {
+  /* Styles for section headings (used across multiple sections) */
+  font-size: 4rem;
+}
+
+.benefits-list {
+  /* Styles for the unordered list of benefits */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.benefit-item {
+  /* Styles for individual benefit list items */
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+}
+
+.get-started-link {
+  /* Styles for the Get Started link in the benefits section */
+  background-color: var(--primary);
+  color: #FFFFFF;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  padding: 2rem 20rem;
+  align-self: start;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  transition: 0.2s;
+}
+
+.get-started-link:hover{
+  background-color: #1e40af;
+}
+
+/* Features Section Styles */
+
+.features-header {
+  /* Styles for the header container with title and description */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 8rem;
+  height: auto;
+}
+
+.section-title{
+  font-size: 4rem;
+}
+
+.section-description {
+  /* Styles for section description paragraphs (used across multiple sections) */
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.features-container {
+  /* Styles for the container holding feature text and image */
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.feature-text-column {
+  /* Styles for the column containing feature items */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
+
+.feature-item {
+  /* Styles for individual feature containers */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.6rem 1.5rem 2.6rem 1.5rem;
+}
+
+.feature-title {
+  /* Styles for feature headings */
+  font-size: 2.8rem;
+}
+
+.item1{
+  background-color: #DBDBFC;
+  border-radius: 1rem;
+}
+
+.item2{
+  background-color: #FCEDCA;
+  border-radius: 1rem;
+}
+
+.item3{
+  background-color: #D6F593;
+  border-radius: 1rem;
+}
+
+.item4{
+  background-color: #F8DAE2;
+  border-radius: 1rem;
+}
+
+.feature-description {
+  /* Styles for feature description paragraphs */
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: 2.5rem;
+}
+
+.feature-image-container {
+  /* Styles for the container holding the feature image */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.feature-image {
+  /* Styles for the features preview image */
+  max-width: 100%;
+}
+
+/* Testimonials Section Styles */
+
+.testimonials-header {
+  /* Styles for the testimonials header with title and description */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.testimonials-container {
+  /* Styles for the container holding testimonial cards */
+  display: flex;
+  gap: 15rem;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.testimonial-card {
+  /* Styles for individual testimonial cards */
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonial-text {
+  /* Styles for the testimonial quote text */
+  font-size: var(--font-size);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.testimonial-author {
+  /* Styles for the container holding author details */
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.author-image {
+  /* Styles for the author's profile image */
+  width: 8rem;
+}
+
+.name-and-sch-container{
+  /* Styles for the name-and-sch-container */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+}
+
+.author-name {
+  /* Styles for the author's name */
+  font-size: 1.5rem;
+}
+
+.author-title {
+  /* Styles for the author's title (e.g., High School Student) */
+  font-size: var(--font-size);
+}
+
+.cta-container {
+  /* Styles for the call-to-action container */
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 12rem;
+}
+
+.cta-text {
+  /* Styles for the container holding CTA title and link */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.cta-title {
+  /* Styles for the CTA heading */
+  font-size: 3.2rem;
+}
+
+.signup-link {
+  /* Styles for the Sign Up Now link */
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  background-color: var(--primary);
+  color: #FFFFFF;
+  padding: 2rem 5rem;
+  border-radius: 2rem;
+  transition: 0.2s;
+}
+
+.signup-link:hover{
+  background-color: #1e40af;
+}
+
+.cta-image-container {
+  /* Styles for the container holding the CTA image */
+  width: 50%;
+}
+
+.cta-image {
+  /* Styles for the call-to-action illustration image */
+  max-width: 95%;
+}
+
+/* Container for the subscription form section */
+.subscribe-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  /* height: 60vh; */
+  position: relative;
+  margin-bottom: -5rem;
+  
+}
+
+.main-subscribe-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 45rem;
+  width: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 2rem;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+}
+
+/* Title for the subscription section */
+.subscribe-title {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+/* Description text for the subscription section */
+.subscribe-description {
+  font-size: var(--font-size);
+}
+
+/* Form element for email subscription */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Input field for email address */
+.email-input {
+  padding: 1.6rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #8a8a8b;
+}
+
+/* Submit button for the subscription form */
+.subscribe-button {
+  background-color: var(--primary);
+  border: none;
+  padding: 1.6rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: var(--font-size);
+  color: #FFFFFF;
+  font-weight: var(--font-weight)
+}
+
+.subscribe-button:hover{
+  background-color: #1e40af;
+
+}
+
+/* Footer Styles */
+.site-footer {
+  /* Styles for the footer section */
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-color: #010813;
+  color: #FFFFFF;
+  justify-content: space-around;
+  padding-top: 10rem;
+}
+
+.footer-column {
+  /* Styles for individual footer columns */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.footer-title {
+  /* Styles for footer column headings */
+  font-size: var(--font-size);
+}
+
+.footer-link {
+  /* Styles for footer links (Terms and Conditions, Privacy Policy) */
+   color: #FFFFFF;
+  
+}
+
+
+.social-media {
+  /* Styles for the social media column */
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links {
+  /* Styles for the list of social media links */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+
+  
+}
+
+.social-link {
+  /* Styles for individual social media links */
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  gap: 0.5rem;
+}
